@@ -1,0 +1,27 @@
+
+#detail{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 70%;
+    gap: 8px;
+    justify-content: center;
+    overflow-y: auto;
+    height: 100%;
+}
+.dish{
+    background-color: #2B0946;
+    color:#F4F4F9;
+    padding: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 8px;
+    display: flex;
+    img{
+        height: 256px;
+        width: 256px;
+        border-radius: 8px;
+    }
+}
+#sidediv{
+    margin-left: 16px;
+}

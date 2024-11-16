@@ -1,0 +1,18 @@
+
+
+#name{
+    color: #a8dadc;
+    font-size: 8rem;
+}
+#tagline{
+    font-size: 2rem;
+    color:#cbf3f0;
+}
+#home{
+    height:100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

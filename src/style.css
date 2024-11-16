@@ -1,0 +1,101 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+    isolation: isolate;
+}
+
+html,body{
+    height: 100%;
+    background-image: url("./images/pexels-shantanu-pal-938952-2802527.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+}
+button{
+    background-color: #34083de2;
+    color: #F4F4F9;
+    border:none;
+    border-radius: 2px;
+    height: 2.5rem;
+    width:98%;
+    margin: 2px;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+button:hover{
+    background-color: #33083ef4;
+    color: #F4F4F9;
+    transform: scale(1.01);
+    transition-duration: 3ms;
+    
+}
+
+
+header{
+    width: 100%;
+    backdrop-filter: blur(4px);
+}
+nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+#content{
+    flex: 1;
+    width: 100%;
+    backdrop-filter: blur(4px);
+}
+
+.active{
+    background-color: #2F0942;
+    transform: scaleX(1.01);
+}
+.active:hover{
+    background-color:#2F0942 ;
+}
